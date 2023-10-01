@@ -1,0 +1,307 @@
+:root {
+    --main-color-1: #fd9f3e;
+    --main-color-2: #033066;
+    --main-padding: 100px
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/*Start header */
+header {
+    display: flex;
+    justify-content: space-around;
+}
+header .head h1 {
+    color: var(--main-color-2);
+    font-size: 25px;
+    padding: 25px;
+}
+header .head h1 span {
+    color: var(--main-color-1);
+}
+header .social {
+    display: flex;
+    align-items: center;
+}
+header .social .box {
+    display: flex;
+}
+header .social .box i {
+    font-size: 18px;
+    padding: 15px;
+    margin: 0 10px;
+    color: var(--main-color-2);
+    background-color: var(--main-color-1);
+    border-radius: 50%;
+}
+header .social .box h2 {
+    font-size: 17px;
+    color: var(--main-color-2);
+}
+header .social .box p {
+    font-size: 12px;
+    padding-top: 5px;
+}
+ nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fd9f3e;
+    margin: 0 250px;
+    z-index: 1;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px  50px;
+    margin: 0 20px;
+}
+nav ul li {
+    margin: 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+nav button {
+    margin-right: 15px;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: var(--main-color-2);
+    font-size: 15px;
+    font-weight: bold;
+}
+/*End header */
+/* srart home */
+.hero {
+    position: relative;
+    bottom: 30px;
+    background-image: url("../media/b-1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    z-index: -1;
+}
+.hero .text {
+    position: relative;
+    top: 30%;
+    margin-left: 250px;
+}
+.hero .text p {
+    width: 370px;
+    background-color: #40404037;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.hero .text p i {
+    padding: 5px;
+    font-size: 18px;
+color: var(--main-color-1);
+}
+.hero .text h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--main-color-2);
+    margin: 15px 0;
+}
+.hero .text button {
+    margin: 15px 0;
+    padding: 15px 30px;
+    color: var(--main-color-2);
+    background-color: var(--main-color-1);
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* End home */
+/* Srart abuot */
+.about {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+.about .container {
+    display: flex;
+    justify-content: center;
+    margin: 0 150px;
+}
+.about .container img {
+    margin: 0 30px;
+}
+.about .container .text .h-1 {
+    background-color: #eee;
+    width: 250px;
+    padding: 10px;
+    font-weight: bold;
+    color: var(--main-color-2);
+    margin: 15px 0;
+}
+.about .container .text .h-1 i {
+    color: var(--main-color-1);
+}
+.about .container .text h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--main-color-2);
+    margin: 15px 0;
+}
+.about .container .text .h-2{
+    margin: 15px 0;
+    color: #777;
+    font-size: 14px;
+}
+.about .container .text .info {
+    display: flex;
+    justify-content: center;
+}
+.about .container .text .info .number {
+    margin: 0 15px;
+    text-align: center;
+    background-color: #eee;
+    padding: 15px;
+}
+.about .container .text .info .number  span {
+    color: var(--main-color-1);
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: -10px;
+}
+.about .container .text .info .number p {
+    font-weight: bold;
+    color: var(--main-color-2);
+    padding-top: 10px;
+}
+.about .container .text .info ul li {
+    color: #777;
+    padding: 10px 5px;
+}
+/* End abuot */
+/* Star services */
+.services {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+
+}
+.services .container {
+    background-color: #eee;
+}
+.services .text {
+    text-align: center;
+}
+.services .text .s-1 {
+    position: relative;
+    left: 43%;
+    top: 10px;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--main-color-2);
+}
+.services .text .s-1 i {
+    color: var(--main-color-1);
+}
+.services .text h2 {
+    margin: 20px;
+    font-size: 40px;
+    color: var(--main-color-2);
+}
+.services .text p {
+    color: #777;
+}
+.services .container .boxs {
+    display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 15px;
+grid-row-gap: 15px;
+margin: 0 150px;
+}
+.services .container .boxs  .box {
+    background-color: #122a47dd;
+    padding: 20px;
+}
+.services .container .boxs  .box i {
+    color: var(--main-color-1);
+    font-size: 30px;
+    margin: 10px;
+}
+.services .container .boxs  .box h3 {
+    color: var(--main-color-1);
+    margin: 15px 0;
+}
+.services .container .boxs  .box p {
+    color: #eee;
+    font-size: 12px;
+    margin: 20px 0;
+}
+.services .container .boxs  .box a {
+    color: #fff;
+    font-weight: bold;
+}
+/* End services */
+/*  Start gallery */
+.gallery {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+.gallery .g-1 {
+    text-align: center;
+    position: relative;
+    left: 43%;
+    background-color: #eee;
+    width: 150px;
+    padding: 10px;
+    color: var(--main-color-2);
+    font-weight: bold;
+}
+.gallery .g-1 i {
+    color: var(--main-color-1);
+}
+.gallery .iamge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.gallery .iamge .box {
+    padding-top: 50px;
+}
+.gallery .iamge .box img {
+    width: 300px;
+    height: 400px;
+}
+.gallery .iamge .box h3 {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--main-color-2);
+}
+.gallery .iamge .box p {
+    text-align: center;
+    color: #777;
+    margin-top: 10px;
+}
+/*  End gallery */
+/* Start footer  */
+footer p {
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+    background-color:  #122a47dd;
+}
+/* End footer  */
